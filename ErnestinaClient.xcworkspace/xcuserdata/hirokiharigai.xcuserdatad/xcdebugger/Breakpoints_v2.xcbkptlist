@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ErnestinaClient/Components/UserCustomCell.swift"
+            timestampString = "571237978.863149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ErnestinaClient/Components/UserStatisticsCustomCell.swift"
+            timestampString = "569228999.093854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "UserStatisticsCustomCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ErnestinaClient.UserStatisticsCustomCell.passageTextView.getter : weak Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "ErnestinaClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hirokiharigai/Desktop/ErnestinaClient/ErnestinaClient/Components/UserStatisticsCustomCell.swift"
+                  timestampString = "569223019.141385"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ErnestinaClient.UserStatisticsCustomCell.passageTextView.setter : weak Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "ErnestinaClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hirokiharigai/Desktop/ErnestinaClient/ErnestinaClient/Components/UserStatisticsCustomCell.swift"
+                  timestampString = "569223019.1429189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "106">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

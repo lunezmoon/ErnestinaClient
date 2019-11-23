@@ -1,0 +1,44 @@
+PODS:
+  - MBCircularProgressBar (0.3.5)
+  - RSKImageCropper (2.2.1)
+  - SimplePDF (3.0.0)
+  - SwiftCloudant (0.8.1-SNAPSHOT)
+  - SwiftGifOrigin (1.6.1)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - MBCircularProgressBar
+  - RSKImageCropper
+  - SimplePDF
+  - SwiftCloudant (from `https://github.com/cloudant/swift-cloudant.git`)
+  - SwiftGifOrigin
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBCircularProgressBar
+    - RSKImageCropper
+    - SimplePDF
+    - SwiftGifOrigin
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SwiftCloudant:
+    :git: https://github.com/cloudant/swift-cloudant.git
+
+CHECKOUT OPTIONS:
+  SwiftCloudant:
+    :commit: e363c22e716e5967cb8c564b86c84fdee3360646
+    :git: https://github.com/cloudant/swift-cloudant.git
+
+SPEC CHECKSUMS:
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
+  SimplePDF: 903143ede36965886997a5c1bc6b8940b082ba20
+  SwiftCloudant: ccd1e8aaf92634b6782532467e8d270391d58eec
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: dab8084fd5438d1239bf8c08d8969a0561e517d2
+
+COCOAPODS: 1.5.3

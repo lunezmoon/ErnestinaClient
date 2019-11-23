@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A001DC220E66AD0002DC89A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A58F16B2099D31D0080F490 /* Starscream.framework */; };
+		8A001DC320E66AD0002DC89A /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A58F16B2099D31D0080F490 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A001DC420E66AD4002DC89A /* DiscoveryV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A50AF9C20E6695C004DCEF3 /* DiscoveryV1.framework */; };
+		8A001DC520E66AD4002DC89A /* DiscoveryV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A50AF9C20E6695C004DCEF3 /* DiscoveryV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A22254020DF3643004EB268 /* RecordLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22253F20DF3643004EB268 /* RecordLectureViewController.swift */; };
+		8A23ADDB2115C67C0034E91C /* QueryEngine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8A23ADDA2115C67C0034E91C /* QueryEngine.gif */; };
+		8A252BA620D4D2B80053335D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A252BA520D4D2B80053335D /* LoginViewController.swift */; };
+		8A2A5A73210616BF007C5321 /* TestPreparationMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2A5A72210616BF007C5321 /* TestPreparationMenuViewController.swift */; };
+		8A2DA80020E2691800A02313 /* ReviewLectureMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DA7FF20E2691800A02313 /* ReviewLectureMenuViewController.swift */; };
+		8A30969120DE94D400F90314 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30969020DE94D400F90314 /* MainViewController.swift */; };
+		8A58F16A2099D3030080F490 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A58F1692099D3030080F490 /* SpeechToTextV1.framework */; };
+		8A58F170209A02CC0080F490 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A58F1692099D3030080F490 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A77F453216DA99700B7FD88 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77F452216DA99700B7FD88 /* RegisterViewController.swift */; };
+		8A77F454216DC63A00B7FD88 /* AssistantV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7A3876209DB160001E0935 /* AssistantV1.framework */; };
+		8A77F455216DC63A00B7FD88 /* AssistantV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7A3876209DB160001E0935 /* AssistantV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A77F45E216DF32000B7FD88 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77F45D216DF32000B7FD88 /* UserListViewController.swift */; };
+		8A77F460216DF35700B7FD88 /* UserCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77F45F216DF35700B7FD88 /* UserCustomCell.swift */; };
+		8A78B5E7210E1115000A8BE9 /* TestPreparationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78B5E6210E1115000A8BE9 /* TestPreparationResultViewController.swift */; };
+		8A8A4F2A20DFD06500046BC8 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8A4F2920DFD06500046BC8 /* GlobalValues.swift */; };
+		8A902CFB20F9DD1100970600 /* QueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A902CFA20F9DD1100970600 /* QueryViewController.swift */; };
+		8A902CFD20F9DE8C00970600 /* QueryCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A902CFC20F9DE8C00970600 /* QueryCustomCell.swift */; };
+		8A9829C721061A060078B40A /* TestPreparationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9829C621061A060078B40A /* TestPreparationViewController.swift */; };
+		8A9829C921061B640078B40A /* TestPreparationCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9829C821061B640078B40A /* TestPreparationCustomCell.swift */; };
+		8A98E17A211B448C00659C27 /* ReviewNotesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98E179211B448C00659C27 /* ReviewNotesMenuViewController.swift */; };
+		8A98E17C211B462F00659C27 /* ReviewNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98E17B211B462F00659C27 /* ReviewNotesViewController.swift */; };
+		8A9EB1E720D418CB0061548D /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AE27E9020FC404E00B98491 /* AssistantKeywordCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE27E8F20FC404E00B98491 /* AssistantKeywordCustomCell.swift */; };
+		8AE27E9220FC406600B98491 /* AssistantEntityCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE27E9120FC406600B98491 /* AssistantEntityCustomCell.swift */; };
+		8AE80E3B20973D2F007C3BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80E3A20973D2F007C3BB6 /* AppDelegate.swift */; };
+		8AE80E4220973D2F007C3BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE80E4120973D2F007C3BB6 /* Assets.xcassets */; };
+		8AE80E4520973D2F007C3BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE80E4320973D2F007C3BB6 /* LaunchScreen.storyboard */; };
+		8AE80E5020973D2F007C3BB6 /* ErnestinaClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80E4F20973D2F007C3BB6 /* ErnestinaClientTests.swift */; };
+		8AE80E5B20973D2F007C3BB6 /* ErnestinaClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80E5A20973D2F007C3BB6 /* ErnestinaClientUITests.swift */; };
+		8AECC8E32180573000B1BDDD /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77F456216DC6CB00B7FD88 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AF7BBE620E3C5BF0000DED5 /* ReviewLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7BBE520E3C5BF0000DED5 /* ReviewLectureViewController.swift */; };
+		8AFC9D7120F0DDE4001B16E9 /* EntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC9D7020F0DDE4001B16E9 /* EntityViewController.swift */; };
+		8AFC9D7620F0E039001B16E9 /* EntityCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC9D7520F0E039001B16E9 /* EntityCustomCell.swift */; };
+		BC07017C21AECDFE00375542 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07017B21AECDFE00375542 /* HttpService.swift */; };
+		BC0C86D921F6FEF7009D00EB /* SendDocumentMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C86D821F6FEF7009D00EB /* SendDocumentMenuViewController.swift */; };
+		BC15480E218DC6E10019F2CD /* Pods_ErnestinaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1FA1971E7DA71E8015C10A /* Pods_ErnestinaClient.framework */; };
+		BC15480F218DC6E10019F2CD /* Pods_ErnestinaClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC1FA1971E7DA71E8015C10A /* Pods_ErnestinaClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC339E4921FDEAE10084C9D8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC339E4821FDEAE10084C9D8 /* UIImageViewExtension.swift */; };
+		BC42662121FE0843002231E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42661F21FE0843002231E9 /* Main.storyboard */; };
+		BC4D6BB221C699CA003B30A5 /* RegisterCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D6BB121C699CA003B30A5 /* RegisterCompletedViewController.swift */; };
+		BC507B5021C0EBB10091CCD6 /* RestDatabaseConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507B4F21C0EBB10091CCD6 /* RestDatabaseConnector.swift */; };
+		BC507B5521C0F5950091CCD6 /* Ernestina.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC507B5421C0F5950091CCD6 /* Ernestina.plist */; };
+		BC507B5721C0F8740091CCD6 /* RestWatsonDiscoveryConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507B5621C0F8740091CCD6 /* RestWatsonDiscoveryConnector.swift */; };
+		BC507B5921C108B90091CCD6 /* RestWatsonAssistantConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507B5821C108B90091CCD6 /* RestWatsonAssistantConnector.swift */; };
+		BC507B5B21C12D170091CCD6 /* RestGoogleConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507B5A21C12D170091CCD6 /* RestGoogleConnector.swift */; };
+		BC898B0121C5006B0023CDCD /* RegisterDetailedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC898B0021C5006B0023CDCD /* RegisterDetailedInfoViewController.swift */; };
+		BCABD3C021F836C000E753C3 /* RestWatsonNlcConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCABD3BF21F836C000E753C3 /* RestWatsonNlcConnector.swift */; };
+		BCABD3C221F83A7E00E753C3 /* RestDbpediaConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCABD3C121F83A7E00E753C3 /* RestDbpediaConnector.swift */; };
+		BCB8E2B3218DC41F0084156C /* ErnestinaClientTests.xctest in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80E4B20973D2F007C3BB6 /* ErnestinaClientTests.xctest */; };
+		BCB8E2B4218DC41F0084156C /* ErnestinaClientUITests.xctest in Sources */ = {isa = PBXBuildFile; fileRef = 8AE80E5620973D2F007C3BB6 /* ErnestinaClientUITests.xctest */; };
+		BCBFEBF821E7852700EF81BA /* UserStatisticsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFEBF721E7852700EF81BA /* UserStatisticsMenuViewController.swift */; };
+		BCBFEBFA21E78FE700EF81BA /* UserStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFEBF921E78FE700EF81BA /* UserStatisticsViewController.swift */; };
+		BCBFEBFC21E791D100EF81BA /* UserStatisticsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFEBFB21E791D100EF81BA /* UserStatisticsCustomCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AE80E4C20973D2F007C3BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AE80E2F20973D2F007C3BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AE80E3620973D2F007C3BB6;
+			remoteInfo = Watson_Project;
+		};
+		8AE80E5720973D2F007C3BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AE80E2F20973D2F007C3BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AE80E3620973D2F007C3BB6;
+			remoteInfo = Watson_Project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A58F171209A02CC0080F490 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A001DC320E66AD0002DC89A /* Starscream.framework in Embed Frameworks */,
+				8A77F455216DC63A00B7FD88 /* AssistantV1.framework in Embed Frameworks */,
+				8A9EB1E720D418CB0061548D /* (null) in Embed Frameworks */,
+				8A001DC520E66AD4002DC89A /* DiscoveryV1.framework in Embed Frameworks */,
+				8A58F170209A02CC0080F490 /* SpeechToTextV1.framework in Embed Frameworks */,
+				8AECC8E32180573000B1BDDD /* RestKit.framework in Embed Frameworks */,
+				BC15480F218DC6E10019F2CD /* Pods_ErnestinaClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		184891C567BDF439DC2931F4 /* Pods-ErnestinaClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErnestinaClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ErnestinaClient/Pods-ErnestinaClient.debug.xcconfig"; sourceTree = "<group>"; };
+		8A22253F20DF3643004EB268 /* RecordLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLectureViewController.swift; sourceTree = "<group>"; };
+		8A23ADDA2115C67C0034E91C /* QueryEngine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = QueryEngine.gif; sourceTree = "<group>"; };
+		8A252BA520D4D2B80053335D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A2A5A72210616BF007C5321 /* TestPreparationMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPreparationMenuViewController.swift; sourceTree = "<group>"; };
+		8A2DA7FF20E2691800A02313 /* ReviewLectureMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewLectureMenuViewController.swift; sourceTree = "<group>"; };
+		8A30969020DE94D400F90314 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8A50AF9C20E6695C004DCEF3 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = Carthage/Build/iOS/DiscoveryV1.framework; sourceTree = "<group>"; };
+		8A58F1692099D3030080F490 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		8A58F16B2099D31D0080F490 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		8A77F452216DA99700B7FD88 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8A77F456216DC6CB00B7FD88 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		8A77F45D216DF32000B7FD88 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		8A77F45F216DF35700B7FD88 /* UserCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomCell.swift; sourceTree = "<group>"; };
+		8A78B5E6210E1115000A8BE9 /* TestPreparationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPreparationResultViewController.swift; sourceTree = "<group>"; };
+		8A7A3876209DB160001E0935 /* AssistantV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssistantV1.framework; path = Carthage/Build/iOS/AssistantV1.framework; sourceTree = "<group>"; };
+		8A8A4F2920DFD06500046BC8 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
+		8A8AF2672171D1EC0080DCDD /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		8A902CFA20F9DD1100970600 /* QueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryViewController.swift; sourceTree = "<group>"; };
+		8A902CFC20F9DE8C00970600 /* QueryCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryCustomCell.swift; sourceTree = "<group>"; };
+		8A9829C621061A060078B40A /* TestPreparationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPreparationViewController.swift; sourceTree = "<group>"; };
+		8A9829C821061B640078B40A /* TestPreparationCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPreparationCustomCell.swift; sourceTree = "<group>"; };
+		8A98E179211B448C00659C27 /* ReviewNotesMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewNotesMenuViewController.swift; sourceTree = "<group>"; };
+		8A98E17B211B462F00659C27 /* ReviewNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewNotesViewController.swift; sourceTree = "<group>"; };
+		8AE27E8F20FC404E00B98491 /* AssistantKeywordCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantKeywordCustomCell.swift; sourceTree = "<group>"; };
+		8AE27E9120FC406600B98491 /* AssistantEntityCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantEntityCustomCell.swift; sourceTree = "<group>"; };
+		8AE80E3720973D2F007C3BB6 /* ErnestinaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErnestinaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE80E3A20973D2F007C3BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AE80E4120973D2F007C3BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AE80E4420973D2F007C3BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AE80E4620973D2F007C3BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE80E4B20973D2F007C3BB6 /* ErnestinaClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErnestinaClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE80E4F20973D2F007C3BB6 /* ErnestinaClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErnestinaClientTests.swift; sourceTree = "<group>"; };
+		8AE80E5120973D2F007C3BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE80E5620973D2F007C3BB6 /* ErnestinaClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErnestinaClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE80E5A20973D2F007C3BB6 /* ErnestinaClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErnestinaClientUITests.swift; sourceTree = "<group>"; };
+		8AE80E5C20973D2F007C3BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF7BBE520E3C5BF0000DED5 /* ReviewLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewLectureViewController.swift; sourceTree = "<group>"; };
+		8AFC9D7020F0DDE4001B16E9 /* EntityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewController.swift; sourceTree = "<group>"; };
+		8AFC9D7520F0E039001B16E9 /* EntityCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityCustomCell.swift; sourceTree = "<group>"; };
+		90689B51C04CBD479077C538 /* Pods-ErnestinaClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErnestinaClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-ErnestinaClient/Pods-ErnestinaClient.release.xcconfig"; sourceTree = "<group>"; };
+		AC1FA1971E7DA71E8015C10A /* Pods_ErnestinaClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErnestinaClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC07017B21AECDFE00375542 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		BC0C86D821F6FEF7009D00EB /* SendDocumentMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDocumentMenuViewController.swift; sourceTree = "<group>"; };
+		BC339E4821FDEAE10084C9D8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		BC42662021FE0843002231E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC4D6BB121C699CA003B30A5 /* RegisterCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCompletedViewController.swift; sourceTree = "<group>"; };
+		BC507B4F21C0EBB10091CCD6 /* RestDatabaseConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDatabaseConnector.swift; sourceTree = "<group>"; };
+		BC507B5421C0F5950091CCD6 /* Ernestina.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Ernestina.plist; sourceTree = "<group>"; };
+		BC507B5621C0F8740091CCD6 /* RestWatsonDiscoveryConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWatsonDiscoveryConnector.swift; sourceTree = "<group>"; };
+		BC507B5821C108B90091CCD6 /* RestWatsonAssistantConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWatsonAssistantConnector.swift; sourceTree = "<group>"; };
+		BC507B5A21C12D170091CCD6 /* RestGoogleConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestGoogleConnector.swift; sourceTree = "<group>"; };
+		BC898B0021C5006B0023CDCD /* RegisterDetailedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDetailedInfoViewController.swift; sourceTree = "<group>"; };
+		BCABD3BF21F836C000E753C3 /* RestWatsonNlcConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWatsonNlcConnector.swift; sourceTree = "<group>"; };
+		BCABD3C121F83A7E00E753C3 /* RestDbpediaConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDbpediaConnector.swift; sourceTree = "<group>"; };
+		BCBFEBF721E7852700EF81BA /* UserStatisticsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatisticsMenuViewController.swift; sourceTree = "<group>"; };
+		BCBFEBF921E78FE700EF81BA /* UserStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatisticsViewController.swift; sourceTree = "<group>"; };
+		BCBFEBFB21E791D100EF81BA /* UserStatisticsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatisticsCustomCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AE80E3420973D2F007C3BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A001DC220E66AD0002DC89A /* Starscream.framework in Frameworks */,
+				8A77F454216DC63A00B7FD88 /* AssistantV1.framework in Frameworks */,
+				8A001DC420E66AD4002DC89A /* DiscoveryV1.framework in Frameworks */,
+				BC15480E218DC6E10019F2CD /* Pods_ErnestinaClient.framework in Frameworks */,
+				8A58F16A2099D3030080F490 /* SpeechToTextV1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80E4820973D2F007C3BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80E5320973D2F007C3BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43866BF846BCF1DE409135DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				184891C567BDF439DC2931F4 /* Pods-ErnestinaClient.debug.xcconfig */,
+				90689B51C04CBD479077C538 /* Pods-ErnestinaClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A4708F620FB77A3008A11CE /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				8A23ADDA2115C67C0034E91C /* QueryEngine.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		8AE80E2E20973D2F007C3BB6 = {
+			isa = PBXGroup;
+			children = (
+				8A8AF2672171D1EC0080DCDD /* Bridging-Header.h */,
+				8A77F456216DC6CB00B7FD88 /* RestKit.framework */,
+				8A50AF9C20E6695C004DCEF3 /* DiscoveryV1.framework */,
+				8AE80E3920973D2F007C3BB6 /* ErnestinaClient */,
+				8AE80E4E20973D2F007C3BB6 /* ErnestinaClientTests */,
+				8AE80E5920973D2F007C3BB6 /* ErnestinaClientUITests */,
+				8AE80E3820973D2F007C3BB6 /* Products */,
+				8A7A3876209DB160001E0935 /* AssistantV1.framework */,
+				8A58F16B2099D31D0080F490 /* Starscream.framework */,
+				8A58F1692099D3030080F490 /* SpeechToTextV1.framework */,
+				43866BF846BCF1DE409135DC /* Pods */,
+				EABE91DBCFCF803B1AB1C4CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AE80E3820973D2F007C3BB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80E3720973D2F007C3BB6 /* ErnestinaClient.app */,
+				8AE80E4B20973D2F007C3BB6 /* ErnestinaClientTests.xctest */,
+				8AE80E5620973D2F007C3BB6 /* ErnestinaClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AE80E3920973D2F007C3BB6 /* ErnestinaClient */ = {
+			isa = PBXGroup;
+			children = (
+				BC07017A21AECDCA00375542 /* Utilities */,
+				8A4708F620FB77A3008A11CE /* Gifs */,
+				8AFC9D7220F0DFF7001B16E9 /* Components */,
+				8AF7BBED20E3E4550000DED5 /* ViewController */,
+				8AF7BBEC20E3E3F70000DED5 /* EnvironmentVariables */,
+				8AF7BBEB20E3E3EB0000DED5 /* Connectors */,
+				8AE80E3A20973D2F007C3BB6 /* AppDelegate.swift */,
+				8AE80E4120973D2F007C3BB6 /* Assets.xcassets */,
+				8AE80E4320973D2F007C3BB6 /* LaunchScreen.storyboard */,
+				BC42661F21FE0843002231E9 /* Main.storyboard */,
+				8AE80E4620973D2F007C3BB6 /* Info.plist */,
+				BC507B5421C0F5950091CCD6 /* Ernestina.plist */,
+			);
+			path = ErnestinaClient;
+			sourceTree = "<group>";
+		};
+		8AE80E4E20973D2F007C3BB6 /* ErnestinaClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80E4F20973D2F007C3BB6 /* ErnestinaClientTests.swift */,
+				8AE80E5120973D2F007C3BB6 /* Info.plist */,
+			);
+			path = ErnestinaClientTests;
+			sourceTree = "<group>";
+		};
+		8AE80E5920973D2F007C3BB6 /* ErnestinaClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AE80E5A20973D2F007C3BB6 /* ErnestinaClientUITests.swift */,
+				8AE80E5C20973D2F007C3BB6 /* Info.plist */,
+			);
+			path = ErnestinaClientUITests;
+			sourceTree = "<group>";
+		};
+		8AF7BBEB20E3E3EB0000DED5 /* Connectors */ = {
+			isa = PBXGroup;
+			children = (
+				BC507B4F21C0EBB10091CCD6 /* RestDatabaseConnector.swift */,
+				BC507B5621C0F8740091CCD6 /* RestWatsonDiscoveryConnector.swift */,
+				BC507B5821C108B90091CCD6 /* RestWatsonAssistantConnector.swift */,
+				BC507B5A21C12D170091CCD6 /* RestGoogleConnector.swift */,
+				BCABD3BF21F836C000E753C3 /* RestWatsonNlcConnector.swift */,
+				BCABD3C121F83A7E00E753C3 /* RestDbpediaConnector.swift */,
+			);
+			path = Connectors;
+			sourceTree = "<group>";
+		};
+		8AF7BBEC20E3E3F70000DED5 /* EnvironmentVariables */ = {
+			isa = PBXGroup;
+			children = (
+				8A8A4F2920DFD06500046BC8 /* GlobalValues.swift */,
+			);
+			path = EnvironmentVariables;
+			sourceTree = "<group>";
+		};
+		8AF7BBED20E3E4550000DED5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A252BA520D4D2B80053335D /* LoginViewController.swift */,
+				8A30969020DE94D400F90314 /* MainViewController.swift */,
+				8A2DA7FF20E2691800A02313 /* ReviewLectureMenuViewController.swift */,
+				8AF7BBE520E3C5BF0000DED5 /* ReviewLectureViewController.swift */,
+				8A22253F20DF3643004EB268 /* RecordLectureViewController.swift */,
+				8AFC9D7020F0DDE4001B16E9 /* EntityViewController.swift */,
+				8A902CFA20F9DD1100970600 /* QueryViewController.swift */,
+				8A2A5A72210616BF007C5321 /* TestPreparationMenuViewController.swift */,
+				8A9829C621061A060078B40A /* TestPreparationViewController.swift */,
+				8A78B5E6210E1115000A8BE9 /* TestPreparationResultViewController.swift */,
+				8A98E179211B448C00659C27 /* ReviewNotesMenuViewController.swift */,
+				8A98E17B211B462F00659C27 /* ReviewNotesViewController.swift */,
+				8A77F452216DA99700B7FD88 /* RegisterViewController.swift */,
+				BC898B0021C5006B0023CDCD /* RegisterDetailedInfoViewController.swift */,
+				BC4D6BB121C699CA003B30A5 /* RegisterCompletedViewController.swift */,
+				BCBFEBF721E7852700EF81BA /* UserStatisticsMenuViewController.swift */,
+				BCBFEBF921E78FE700EF81BA /* UserStatisticsViewController.swift */,
+				8A77F45D216DF32000B7FD88 /* UserListViewController.swift */,
+				BC0C86D821F6FEF7009D00EB /* SendDocumentMenuViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8AFC9D7220F0DFF7001B16E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8AFC9D7520F0E039001B16E9 /* EntityCustomCell.swift */,
+				8A902CFC20F9DE8C00970600 /* QueryCustomCell.swift */,
+				8AE27E8F20FC404E00B98491 /* AssistantKeywordCustomCell.swift */,
+				8AE27E9120FC406600B98491 /* AssistantEntityCustomCell.swift */,
+				8A9829C821061B640078B40A /* TestPreparationCustomCell.swift */,
+				8A77F45F216DF35700B7FD88 /* UserCustomCell.swift */,
+				BCBFEBFB21E791D100EF81BA /* UserStatisticsCustomCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BC07017A21AECDCA00375542 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC07017B21AECDFE00375542 /* HttpService.swift */,
+				BC339E4821FDEAE10084C9D8 /* UIImageViewExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EABE91DBCFCF803B1AB1C4CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC1FA1971E7DA71E8015C10A /* Pods_ErnestinaClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AE80E3620973D2F007C3BB6 /* ErnestinaClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE80E5F20973D2F007C3BB6 /* Build configuration list for PBXNativeTarget "ErnestinaClient" */;
+			buildPhases = (
+				592626B4C2B15A72F517287B /* [CP] Check Pods Manifest.lock */,
+				8AE80E3320973D2F007C3BB6 /* Sources */,
+				8AE80E3420973D2F007C3BB6 /* Frameworks */,
+				8AE80E3520973D2F007C3BB6 /* Resources */,
+				8A58F171209A02CC0080F490 /* Embed Frameworks */,
+				5EEB1D2FE3C474B91E0FB040 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ErnestinaClient;
+			productName = Watson_Project;
+			productReference = 8AE80E3720973D2F007C3BB6 /* ErnestinaClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AE80E4A20973D2F007C3BB6 /* ErnestinaClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE80E6220973D2F007C3BB6 /* Build configuration list for PBXNativeTarget "ErnestinaClientTests" */;
+			buildPhases = (
+				8AE80E4720973D2F007C3BB6 /* Sources */,
+				8AE80E4820973D2F007C3BB6 /* Frameworks */,
+				8AE80E4920973D2F007C3BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE80E4D20973D2F007C3BB6 /* PBXTargetDependency */,
+			);
+			name = ErnestinaClientTests;
+			productName = Watson_ProjectTests;
+			productReference = 8AE80E4B20973D2F007C3BB6 /* ErnestinaClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AE80E5520973D2F007C3BB6 /* ErnestinaClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE80E6520973D2F007C3BB6 /* Build configuration list for PBXNativeTarget "ErnestinaClientUITests" */;
+			buildPhases = (
+				8AE80E5220973D2F007C3BB6 /* Sources */,
+				8AE80E5320973D2F007C3BB6 /* Frameworks */,
+				8AE80E5420973D2F007C3BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE80E5820973D2F007C3BB6 /* PBXTargetDependency */,
+			);
+			name = ErnestinaClientUITests;
+			productName = Watson_ProjectUITests;
+			productReference = 8AE80E5620973D2F007C3BB6 /* ErnestinaClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AE80E2F20973D2F007C3BB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					8AE80E3620973D2F007C3BB6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5KC4PJ53C7;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+					};
+					8AE80E4A20973D2F007C3BB6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8AE80E3620973D2F007C3BB6;
+					};
+					8AE80E5520973D2F007C3BB6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8AE80E3620973D2F007C3BB6;
+					};
+				};
+			};
+			buildConfigurationList = 8AE80E3220973D2F007C3BB6 /* Build configuration list for PBXProject "ErnestinaClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AE80E2E20973D2F007C3BB6;
+			productRefGroup = 8AE80E3820973D2F007C3BB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AE80E3620973D2F007C3BB6 /* ErnestinaClient */,
+				8AE80E4A20973D2F007C3BB6 /* ErnestinaClientTests */,
+				8AE80E5520973D2F007C3BB6 /* ErnestinaClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AE80E3520973D2F007C3BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80E4520973D2F007C3BB6 /* LaunchScreen.storyboard in Resources */,
+				BC42662121FE0843002231E9 /* Main.storyboard in Resources */,
+				8AE80E4220973D2F007C3BB6 /* Assets.xcassets in Resources */,
+				BC507B5521C0F5950091CCD6 /* Ernestina.plist in Resources */,
+				8A23ADDB2115C67C0034E91C /* QueryEngine.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80E4920973D2F007C3BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80E5420973D2F007C3BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		592626B4C2B15A72F517287B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ErnestinaClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EEB1D2FE3C474B91E0FB040 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ErnestinaClient/Pods-ErnestinaClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/RSKImageCropper/RSKImageCropper.framework",
+				"${BUILT_PRODUCTS_DIR}/SimplePDF/SimplePDF.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCloudant/SwiftCloudant.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSKImageCropper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplePDF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCloudant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ErnestinaClient/Pods-ErnestinaClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AE80E3320973D2F007C3BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB8E2B3218DC41F0084156C /* ErnestinaClientTests.xctest in Sources */,
+				BCABD3C021F836C000E753C3 /* RestWatsonNlcConnector.swift in Sources */,
+				BCB8E2B4218DC41F0084156C /* ErnestinaClientUITests.xctest in Sources */,
+				8AE27E9020FC404E00B98491 /* AssistantKeywordCustomCell.swift in Sources */,
+				8A252BA620D4D2B80053335D /* LoginViewController.swift in Sources */,
+				BCBFEBFA21E78FE700EF81BA /* UserStatisticsViewController.swift in Sources */,
+				8AFC9D7620F0E039001B16E9 /* EntityCustomCell.swift in Sources */,
+				BC898B0121C5006B0023CDCD /* RegisterDetailedInfoViewController.swift in Sources */,
+				8AFC9D7120F0DDE4001B16E9 /* EntityViewController.swift in Sources */,
+				8A8A4F2A20DFD06500046BC8 /* GlobalValues.swift in Sources */,
+				8A78B5E7210E1115000A8BE9 /* TestPreparationResultViewController.swift in Sources */,
+				8A902CFD20F9DE8C00970600 /* QueryCustomCell.swift in Sources */,
+				8A9829C721061A060078B40A /* TestPreparationViewController.swift in Sources */,
+				BC507B5921C108B90091CCD6 /* RestWatsonAssistantConnector.swift in Sources */,
+				8A98E17C211B462F00659C27 /* ReviewNotesViewController.swift in Sources */,
+				BC0C86D921F6FEF7009D00EB /* SendDocumentMenuViewController.swift in Sources */,
+				BC507B5B21C12D170091CCD6 /* RestGoogleConnector.swift in Sources */,
+				8A902CFB20F9DD1100970600 /* QueryViewController.swift in Sources */,
+				8AF7BBE620E3C5BF0000DED5 /* ReviewLectureViewController.swift in Sources */,
+				BC507B5021C0EBB10091CCD6 /* RestDatabaseConnector.swift in Sources */,
+				8A77F453216DA99700B7FD88 /* RegisterViewController.swift in Sources */,
+				8A22254020DF3643004EB268 /* RecordLectureViewController.swift in Sources */,
+				BC339E4921FDEAE10084C9D8 /* UIImageViewExtension.swift in Sources */,
+				8AE80E3B20973D2F007C3BB6 /* AppDelegate.swift in Sources */,
+				8A2DA80020E2691800A02313 /* ReviewLectureMenuViewController.swift in Sources */,
+				8A77F460216DF35700B7FD88 /* UserCustomCell.swift in Sources */,
+				8AE27E9220FC406600B98491 /* AssistantEntityCustomCell.swift in Sources */,
+				8A77F45E216DF32000B7FD88 /* UserListViewController.swift in Sources */,
+				8A30969120DE94D400F90314 /* MainViewController.swift in Sources */,
+				BCBFEBFC21E791D100EF81BA /* UserStatisticsCustomCell.swift in Sources */,
+				BC507B5721C0F8740091CCD6 /* RestWatsonDiscoveryConnector.swift in Sources */,
+				8A98E17A211B448C00659C27 /* ReviewNotesMenuViewController.swift in Sources */,
+				8A9829C921061B640078B40A /* TestPreparationCustomCell.swift in Sources */,
+				8A2A5A73210616BF007C5321 /* TestPreparationMenuViewController.swift in Sources */,
+				BC07017C21AECDFE00375542 /* HttpService.swift in Sources */,
+				BC4D6BB221C699CA003B30A5 /* RegisterCompletedViewController.swift in Sources */,
+				BCBFEBF821E7852700EF81BA /* UserStatisticsMenuViewController.swift in Sources */,
+				BCABD3C221F83A7E00E753C3 /* RestDbpediaConnector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80E4720973D2F007C3BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80E5020973D2F007C3BB6 /* ErnestinaClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE80E5220973D2F007C3BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE80E5B20973D2F007C3BB6 /* ErnestinaClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AE80E4D20973D2F007C3BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AE80E3620973D2F007C3BB6 /* ErnestinaClient */;
+			targetProxy = 8AE80E4C20973D2F007C3BB6 /* PBXContainerItemProxy */;
+		};
+		8AE80E5820973D2F007C3BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AE80E3620973D2F007C3BB6 /* ErnestinaClient */;
+			targetProxy = 8AE80E5720973D2F007C3BB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AE80E4320973D2F007C3BB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE80E4420973D2F007C3BB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC42661F21FE0843002231E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC42662021FE0843002231E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AE80E5D20973D2F007C3BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AE80E5E20973D2F007C3BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AE80E6020973D2F007C3BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 184891C567BDF439DC2931F4 /* Pods-ErnestinaClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KC4PJ53C7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ErnestinaClient",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ErnestinaClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.ErnestinaClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8AE80E6120973D2F007C3BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90689B51C04CBD479077C538 /* Pods-ErnestinaClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KC4PJ53C7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ErnestinaClient",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ErnestinaClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.ErnestinaClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		8AE80E6320973D2F007C3BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Watson_ProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Watson-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ErnestinaClient.app/ErnestinaClient";
+			};
+			name = Debug;
+		};
+		8AE80E6420973D2F007C3BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Watson_ProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Watson-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ErnestinaClient.app/ErnestinaClient";
+			};
+			name = Release;
+		};
+		8AE80E6620973D2F007C3BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Watson_ProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Watson-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Watson_Project;
+			};
+			name = Debug;
+		};
+		8AE80E6720973D2F007C3BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Watson_ProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.Watson-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Watson_Project;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AE80E3220973D2F007C3BB6 /* Build configuration list for PBXProject "ErnestinaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80E5D20973D2F007C3BB6 /* Debug */,
+				8AE80E5E20973D2F007C3BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE80E5F20973D2F007C3BB6 /* Build configuration list for PBXNativeTarget "ErnestinaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80E6020973D2F007C3BB6 /* Debug */,
+				8AE80E6120973D2F007C3BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE80E6220973D2F007C3BB6 /* Build configuration list for PBXNativeTarget "ErnestinaClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80E6320973D2F007C3BB6 /* Debug */,
+				8AE80E6420973D2F007C3BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE80E6520973D2F007C3BB6 /* Build configuration list for PBXNativeTarget "ErnestinaClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE80E6620973D2F007C3BB6 /* Debug */,
+				8AE80E6720973D2F007C3BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AE80E2F20973D2F007C3BB6 /* Project object */;
+}
